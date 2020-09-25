@@ -1,0 +1,114 @@
+# Useful Tags
+## Tag: details
+Provide an on-demand container.  <summary> and the code it contains will be displayed when clicking on the summary space
+```html
+<details>
+  <summary>Click Here to get the user details</summary>
+    <p>I'm Hidding shhh</p>
+</details>
+```
+https://html5-tips.netlify.app/details/index.html
+
+## Editable Content
+attribute to make the content editable (div, p, ul, etc.)
+<element contenteditable="true|false">
+```html
+<h2> Shoppping List(Content Editable) </h2>
+ <ul class="content-editable" contenteditable="true">
+     <li> 1. Milk </li>
+     <li> 2. Bread </li>
+     <li> 3. Honey </li>
+</ul>
+```
+https://html5-tips.netlify.app/content-editable/index.html
+
+## Image Map
+Define clickable areas inside an image.
+```html
+<div>
+    <img src="circus.jpg" width="500" height="500" alt="Circus" usemap="#circusmap">
+
+    <map name="circusmap">
+        <area shape="rect" coords="67,114,207,254" href="elephant.htm">
+        <area shape="rect" coords="222,141,318, 256" href="lion.htm">
+        <area shape="rect" coords="343,111,455, 267" href="horse.htm">
+        <area shape="rect" coords="35,328,143,500" href="clown.htm">
+        <area shape="circle" coords="426,409,100" href="clown.htm">
+    </map>
+ </div>
+```
+https://html5-tips.netlify.app/map/index.html
+
+## Mark Content
+Highlight text
+ <p> Did you know, you can <mark>"Highlight something interesting"</mark> just with an HTML tag? </p>
+https://html5-tips.netlify.app/mark/index.html
+
+## Output Tag
+The <output> tag represents the result of a calculation.
+```html
+<form oninput="x.value=parseInt(a.value) * parseInt(b.value)">
+   <input type="number" id="a" value="0">
+          * <input type="number" id="b" value="0">
+                = <output name="x" for="a b"></output>
+</form>
+```
+https://html5-tips.netlify.app/output/index.html
+
+## DataList
+The <datalist> tag specifies a list of the dropdown with typing search filter.
+```html
+<form action="" method="get">
+    <label for="fruit">Choose your fruit from the list:</label>
+    <input list="fruits" name="fruit" id="fruit">
+        <datalist id="fruits">
+           <option value="Apple">
+           <option value="Orange">
+           <option value="Banana">
+           <option value="Mango">
+           <option value="Avacado">
+        </datalist>
+     <input type="submit">
+ </form>
+```
+https://html5-tips.netlify.app/datalist/index.html
+
+<select>-<option> differences: One option and it allows autocomplete.
+
+## Range Slider
+The range is an input type given a slider kind of range selector.
+
+```html
+<form method="post">
+    <input 
+         type="range" 
+         name="range" 
+         min="0" 
+         max="100" 
+         step="1" 
+         value=""
+         onchange="changeValue(event)"/>
+ </form>
+ <div class="range">
+      <output id="output" name="result">  </output>
+ </div>
+```
+
+## Meter Gauge
+Use the <meter> tag to measure data within a given range.
+
+```html
+<label for="home">/home/atapas</label>
+<meter id="home" value="4" min="0" max="10">2 out of 10</meter><br>
+
+<label for="root">/root</label>
+<meter id="root" value="0.6">60%</meter><br>
+```
+
+## Color Picker
+Take a color from control.
+
+```html
+<input type="color" onchange="showColor(event)">
+<p id="colorMe">Color Me!</p>
+```
